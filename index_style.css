@@ -1,7 +1,13 @@
 body{
     padding-left:12em;
-    color:blue;
+    color:black;
     font-family: Georgia,"Times New Roman",Arial;
+}
+#btn_img{
+    position:absolute;
+    float:left;
+    left:200px;
+    top:170px;
 }
 ul.navbar{
     position:absolute;
