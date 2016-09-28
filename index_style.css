@@ -1,0 +1,21 @@
+body{
+    padding-left:12em;
+    color:blue;
+    font-family: Georgia,"Times New Roman",Arial;
+}
+ul.navbar{
+    position:absolute;
+    top:2em;
+    left:1em;
+    width:7em;
+}
+ul.navbar li{
+    background:#cccccc;
+    margin:0.5em 0;
+    /*padding:0.3em;*/
+}
+address{
+    margin-top: 30em;
+    padding-top: 1em;
+    border-top: thin dotted;
+}
