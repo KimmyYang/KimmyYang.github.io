@@ -3,33 +3,48 @@
 <head>
   <title>KimmyYang Page</title>
   <link rel="stylesheet" href="index_style.css">
+  <style type="text/css">
+    #content{
+        position:absolute;
+        float:left;
+        left:200px;
+        top:10px;
+        height:100%;
+        width:100%;
+    }
+  </style>
 </head>
 
-<body>
+<body value="home" onload="load_home()">
 
-<!-- 目錄 -->
+<!-- narvbar -->
 <ul class="navbar">
-    <li><a href="index.html">Home</a>
-    <li><a href="Intro.html">Intro</a>
+    <li><a href ="#" id="home" name="home" onclick="load_home()">Home</a>
+    <li><a href="#" id="intro" name="intro" onclick="load_intro()">Intro</a>
 </ul>
+<div class="results"></div>
 
-<!-- 主要內容 -->
+<!-- content -->
+<div id="content"></div>
+  <script type="text/javascript">
+    //document.querySelector('.results').innerHTML = document.getElementById("home").name;
+    //document.querySelector('.results').innerHTML = document.getElementById("intro").name;
 
-<h1>KimmyYang's Page</h1>
+    function load_home(){
+        document.getElementById("content").innerHTML='<object type="text/html" style="width: 100%;height: 100%;" data="Home.html"></object>';
+    }
+    function load_intro(){
+            document.getElementById("content").innerHTML='<object type="text/html" style="width: 100%;height: 100%;" data="Intro.html"></object>';
+    
+    }
+  </script>
 
-<p>My first personal webpage...
-
-<p>I will record my work and life diary in this website...
-
-<img id="btn_img" src="pic/gray3.jpg">
-<!-- 簽名和日期 -->
-
+<!-- sign -->
 <address>
-    updated:2016/09/28<br>
+    <p align="left">updated:2016/09/28<br>
     email:what_guitar@hotmail.com<br>
     linkedin:https://tw.linkedin.com/in/kimmyyang7
-    
-    
+    </p>
 </address>
 
 </body>
