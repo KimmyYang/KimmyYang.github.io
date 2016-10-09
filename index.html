@@ -2,46 +2,30 @@
 <html>
 <head>
   <title>KimmyYang Page</title>
-  <link rel="stylesheet" href="index_style.css">
-  <style type="text/css">
-    #content{
-        position:absolute;
-        float:left;
-        left:200px;
-        top:10px;
-        height:100%;
-        width:100%;
-    }
-  </style>
+  <!-- style -->
+  <link rel="stylesheet" href="css/index_style.css">
 </head>
 
+<!-- init -->
 <body value="home" onload="load_home()">
 
 <!-- narvbar -->
 <ul class="navbar">
     <li><a href ="#" id="home" name="home" onclick="load_home()">Home</a>
     <li><a href="#" id="intro" name="intro" onclick="load_intro()">Intro</a>
+    <li><a href="#" id="work" name="work" onclick="load_work()">Work</a>
 </ul>
 <div class="results"></div>
 
 <!-- content -->
 <div id="content"></div>
-  <script type="text/javascript">
+  <script src="js/selection_bar.js">
     //document.querySelector('.results').innerHTML = document.getElementById("home").name;
-    //document.querySelector('.results').innerHTML = document.getElementById("intro").name;
-
-    function load_home(){
-        document.getElementById("content").innerHTML='<object type="text/html" style="width: 100%;height: 100%;" data="Home.html"></object>';
-    }
-    function load_intro(){
-            document.getElementById("content").innerHTML='<object type="text/html" style="width: 100%;height: 100%;" data="Intro.html"></object>';
-    
-    }
   </script>
 
 <!-- sign -->
 <address>
-    <p align="left">updated:2016/09/28<br>
+    <p align="left">updated:2016/10/09<br>
     email:what_guitar@hotmail.com<br>
     linkedin:https://tw.linkedin.com/in/kimmyyang7
     </p>

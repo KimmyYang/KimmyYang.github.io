@@ -1,14 +1,23 @@
-body{
+
+/* body */
+/*body{
     padding-left:12em;
     color:black;
     font-family: Georgia,"Times New Roman",Arial;
+}*/
+#title_body{
+    font-size:10em;
+    padding-left:12em;
+    color:blue;
+    font-family: sans-serif;
 }
-#btn_img{
-    position:absolute;
-    float:left;
-    left:200px;
-    top:170px;
+#content_body{
+    margin-left:15em;
+    color:blue;
+    font-family: sans-serif;
 }
+
+/* */
 ul.navbar{
     position:absolute;
     top:2em;
@@ -21,7 +30,8 @@ ul.navbar li{
     /*padding:0.3em;*/
 }
 address{
-    margin-top: 40em;
+    margin-top: 30em;
     padding-top: 1em;
     border-top: thin dotted;
 }
+

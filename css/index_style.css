@@ -1,0 +1,30 @@
+body{
+    padding-left:12em;
+    color:black;
+    font-family: Georgia,"Times New Roman",Arial;
+}
+#content{
+    position:absolute;
+    float:left;
+    left:200px;
+    top:10px;
+    height:100%;
+    width:100%;
+}
+
+ul.navbar{
+    position:absolute;
+    top:2em;
+    left:1em;
+    width:7em;
+}
+ul.navbar li{
+    background:#cccccc;
+    margin:0.5em 0;
+    /*padding:0.3em;*/
+}
+address{
+    margin-top: 40em;
+    padding-top: 1em;
+    border-top: thin dotted;
+}

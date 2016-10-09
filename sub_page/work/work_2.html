@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.0.6 (451290)"/><meta name="altitude" content="126"/><meta name="author" content="Kimmy"/><meta name="created" content="2016-10-09 15:03:40 +0000"/><meta name="latitude" content="24.96474269210518"/><meta name="longitude" content="121.2956361547885"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2016-10-09 15:04:29 +0000"/><title>interface v.s abstract</title></head><body>
+<div><span style="font-size: 21px;"><b>版權聲明: 未經同意請勿轉載, 欲轉載請來信告知</b></span></div>
+<div><b><span style="font-size: 21px;"><br/></span></b></div>
+<div><span style="font-size: 16px;">interface裡面的class defualt 都是abstract, 所以裡面的method都須備實作</span></div>
+<div>
+<div><span style="font-size: 16px;">abstract 裡面可以有concrete methods(一般自訂method), 或是abstract method, 繼承abstract 的class需實作定義為abstract的method</span></div>
+<div><span style="font-size: 16px;"><br/></span></div>
+<div><font size="4">interface 只能extends interface</font></div>
+<div><span style="font-size: 16px;">abstract 可以extends abstract 和 一般的class</span></div>
+<div><span style="font-size: 16px;"><div><span style="font-size: 16px;"><br/></span></div>
+<div><span style="font-size: 16px;">interface A {</span></div>
+<div><span style="font-size: 16px;">    //</span><span style="font-size: 16px;"><b style="margin: 0px; padding: 0px; word-wrap: break-word;">Interface can have only static final (constant) variable i.e. by default</b></span></div>
+<div><b><span style="font-size: 16px;">    </span></b><span style="font-size: 16px;">int aa = 10;</span></div>
+<div><span style="font-size: 16px;">    public void a1();</span></div>
+<div><span style="font-size: 16px;">    public</span> <span style="font-size: 16px;">void</span> <span style="font-size: 16px;">a2();</span></div>
+<div><span style="font-size: 16px;">}</span></div>
+<div><span style="font-size: 16px;"><br/></span></div>
+<div><span style="font-size: 16px;">class test extends A{</span></div>
+<div><span style="font-size: 16px;">    public</span> <span style="font-size: 16px;">void</span> <span style="font-size: 16px;">a1(){ System.out.println("a1");}</span></div>
+<div><span style="font-size: 16px;">    public</span> <span style="font-size: 16px;">void</span> <span style="font-size: 16px;">a2(){ </span><span style="font-size: 16px;">System.out.println("a2");}</span></div>
+<div><span style="font-size: 16px;">}</span></div>
+<div><span style="font-size: 16px;"><br/></span></div>
+<div><span style="font-size: 16px;">abstract B{</span></div>
+<div><span style="font-size: 16px;">    //</span><span style="font-size: 16px;"><b style="margin: 0px; padding: 0px; word-wrap: break-word;">Abstract class can have static, final or static final variables with any access specifier</b></span></div>
+<div><span style="font-size: 16px;">    private int bb = 5;</span></div>
+<div><span style="font-size: 16px;">    protected final int bbb = 10;</span></div>
+<div><span style="font-size: 16px;">    public void b1(){ </span><span style="font-size: 16px;">System.out.println("b1");}</span></div>
+<div><span style="font-size: 16px;">   </span> <span style="font-size: 16px;">public</span>  <span style="font-size: 16px;">abstract void b2();</span></div>
+<div><span style="font-size: 16px;">   </span> <span style="font-size: 16px;">protected</span> <span style="font-size: 16px;">abstract void b3();</span></div>
+<div><span style="font-size: 16px;">}</span></div>
+<div><span style="font-size: 16px;"><br/></span></div>
+<div><span style="font-size: 16px;">class test_2 extends B{</span></div>
+<div><span style="font-size: 16px;">    public void b2(){ </span><span style="font-size: 16px;">System.out.println("b2");}</span></div>
+<div><span style="font-size: 16px;">    protected void b3() {</span><span style="font-size: 16px;">System.out.println("b3");}</span></div>
+<div><span style="font-size: 16px;">}</span></div>
+<div style="margin: 39px 0px 26px; padding: 0px 0px 13px; word-wrap: break-word; font-family: 'Trebuchet MS', Helvetica, sans-serif; color: rgb(85, 85, 85); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); font-weight: bold; font-size: 22px;"/>
+</div>
+<div><br/></div>
+</body></html>
